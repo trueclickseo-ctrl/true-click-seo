@@ -1,0 +1,20 @@
+# ====================================================================
+# .htaccess — True Click SEO Clean URLs
+# Removes .html extensions and redirects to clean URLs
+# ====================================================================
+
+RewriteEngine On
+RewriteBase /
+
+# 1. Redirect index.html to domain root /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ / [R=301,L]
+
+# 2. Redirect page.html to page (external 301 redirect)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+)\.html\ HTTP/
+RewriteRule ^([^/]+)\.html$ /$1 [R=301,L]
+
+# 3. Internally map clean URL to the .html file (internal rewrite)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)$ $1.html [L]

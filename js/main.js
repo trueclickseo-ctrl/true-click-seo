@@ -44,13 +44,21 @@ function initNav() {
   }
 }
 
-/* ── Active Nav Link ─────────────────────────── */
 function highlightActiveNav() {
-  const path = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav__link').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === path || (path === '' && href === 'index.html')) {
+  let path = window.location.pathname;
+  // Normalize path (remove leading/trailing slashes)
+  path = path.replace(/^\/|\/$/g, '');
+  if (path === '') path = '/';
+
+  document.querySelectorAll('.nav__link, .nav__mobile-link').forEach(link => {
+    let href = link.getAttribute('href') || '';
+    href = href.replace(/^\/|\/$/g, '');
+    if (href === '') href = '/';
+
+    if (href === path) {
       link.classList.add('active');
+    } else {
+      link.classList.remove('active');
     }
   });
 }
