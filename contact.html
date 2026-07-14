@@ -152,6 +152,15 @@
       const res  = await fetch('contact-handler.php', { method: 'POST', body: data });
       const json = await res.json();
 
+      if (!banner) {
+        alert(json.message);
+        if (json.success) form.reset();
+        btn.disabled = false;
+        btnText.style.display = 'inline';
+        spinner.style.display = 'none';
+        return;
+      }
+
       banner.style.display     = 'block';
       banner.style.background  = json.success ? '#e8f5e9' : '#fdecea';
       banner.style.color       = json.success ? '#2e7d32' : '#c62828';
@@ -161,11 +170,15 @@
       if (json.success) form.reset();
 
     } catch (err) {
-      banner.style.display    = 'block';
-      banner.style.background = '#fdecea';
-      banner.style.color      = '#c62828';
-      banner.style.border     = '1px solid #ef9a9a';
-      banner.textContent      = 'Something went wrong. Please email us at trueclickseo@gmail.com';
+      if (!banner) {
+        alert('Something went wrong. Please email us at trueclickseo@gmail.com');
+      } else {
+        banner.style.display    = 'block';
+        banner.style.background = '#fdecea';
+        banner.style.color      = '#c62828';
+        banner.style.border     = '1px solid #ef9a9a';
+        banner.textContent      = 'Something went wrong. Please email us at trueclickseo@gmail.com';
+      }
     }
 
     btn.disabled = false;
