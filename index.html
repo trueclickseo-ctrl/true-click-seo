@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="True Click SEO — A premium digital agency based in Stockholm, Sweden. We design, develop, and optimize websites that rank, convert, and scale. SEO, Web Design & Development." />
+  <meta name="keywords" content="SEO agency Stockholm, web design Sweden, website development, technical SEO, local SEO, Shopify development" />
+  <meta property="og:title" content="True Click SEO — Digital Agency Stockholm" />
+  <meta property="og:description" content="We build websites that rank, convert, and scale. Premium SEO, Web Design & Development agency." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://trueclickseo.com" />
+  <title>True Click SEO — Digital Agency Stockholm</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor-dot"  aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Page Transition -->
+  <div id="page-transition" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="True Click SEO Home">
+          True Click<span class="nav__logo-dot"></span>
+        </a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
+          <li><a href="case-studies.html" class="nav__link">Case Studies</a></li>
+          <li><a href="insights.html" class="nav__link">Insights</a></li>
+        </ul>
+
+        <a href="contact.html" class="nav__cta magnetic" id="nav-cta">Let's Talk</a>
+
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <a href="index.html"       class="nav__mobile-link">Home</a>
+    <a href="about.html"       class="nav__mobile-link">About</a>
+    <a href="services.html"    class="nav__mobile-link">Services</a>
+    <a href="portfolio.html"   class="nav__mobile-link">Portfolio</a>
+    <a href="case-studies.html"class="nav__mobile-link">Case Studies</a>
+    <a href="insights.html"    class="nav__mobile-link">Insights</a>
+    <a href="contact.html"     class="nav__mobile-link">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════ -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="hero__geometry" aria-hidden="true">
+        <div class="geo-shape geo-shape--1"></div>
+        <div class="geo-shape geo-shape--2"></div>
+        <div class="geo-shape geo-shape--3"></div>
+        <div class="geo-shape geo-shape--4"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="hero__badge-dot"></span>
+            Stockholm · Pakistan · Global
+          </div>
+
+          <h1 class="hero__headline">
+            <span class="hero__headline-line">
+              <span class="hero__headline-inner hero__headline-inner--1">We build</span>
+            </span>
+            <span class="hero__headline-line">
+              <span class="hero__headline-inner hero__headline-inner--2">websites that rank,</span>
+            </span>
+            <span class="hero__headline-line">
+              <span class="hero__headline-inner hero__headline-inner--3">convert & scale.</span>
+            </span>
+          </h1>
+
+          <p class="hero__subline">
+            Premium SEO, web design, and development from Stockholm, Sweden.
+            We craft digital experiences that outperform the competition.
+          </p>
+
+          <div class="hero__actions">
+            <span class="magnetic">
+              <a href="contact.html" class="btn btn--primary btn--lg" id="hero-cta-primary">
+                Start a Project
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </span>
+            <a href="portfolio.html" class="btn-arrow" id="hero-cta-secondary">
+              View Our Work
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div>
+              <div class="hero__stat-num">120+</div>
+              <div class="hero__stat-label">Projects delivered</div>
+            </div>
+            <div>
+              <div class="hero__stat-num">98%</div>
+              <div class="hero__stat-label">Client retention</div>
+            </div>
+            <div>
+              <div class="hero__stat-num">15+</div>
+              <div class="hero__stat-label">Countries served</div>
+            </div>
+            <div>
+              <div class="hero__stat-num">7 yrs</div>
+              <div class="hero__stat-label">Of excellence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span class="hero__scroll-text">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SELECTED WORK
+    ═══════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="work-heading">
+      <div class="container">
+        <div class="section-header flex-between reveal">
+          <div>
+            <div class="section-header__label">
+              <span class="label label--accent">Selected Work</span>
+            </div>
+            <h2 class="section-header__title" id="work-heading">Projects that<br>speak for themselves</h2>
+          </div>
+          <a href="portfolio.html" class="btn-arrow" id="work-view-all">
+            View all projects
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="work-grid stagger">
+          <!-- Featured project (wide) -->
+          <article class="project-card">
+            <img src="assets/images/project-1.jpg" alt="NordCommerce e-commerce platform redesign" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"></div>
+            <div class="project-card__info">
+              <div class="project-card__meta">E-Commerce · SEO · Development</div>
+              <div class="project-card__name">NordCommerce</div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <img src="assets/images/project-2.jpg" alt="Solhem real estate website design" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"></div>
+            <div class="project-card__info">
+              <div class="project-card__meta">Real Estate · Web Design</div>
+              <div class="project-card__name">Solhem</div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <img src="assets/images/project-3.jpg" alt="Pulsar SaaS dashboard development" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"></div>
+            <div class="project-card__info">
+              <div class="project-card__meta">SaaS · Technical SEO</div>
+              <div class="project-card__name">Pulsar Analytics</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SERVICES
+    ═══════════════════════════════════════════ -->
+    <section class="section" style="background:var(--color-surface)" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <div class="section-header__label">
+            <span class="label label--accent">What We Do</span>
+          </div>
+          <h2 class="section-header__title" id="services-heading">Full-spectrum digital<br>expertise</h2>
+          <p class="section-header__desc">From strategy and design to development and search dominance — everything your brand needs to win online.</p>
+        </div>
+
+        <div class="services-grid stagger">
+          <div class="service-item">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+            </div>
+            <div class="service-item__name">SEO</div>
+            <div class="service-item__desc">Data-driven search strategies that drive compounding organic growth and long-term visibility.</div>
+            <a href="seo.html" class="btn-arrow" style="font-size:var(--text-xs)">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div class="service-item__name">Technical SEO</div>
+            <div class="service-item__desc">Deep-level audits, Core Web Vitals, crawl optimization, and schema markup for maximum indexability.</div>
+            <a href="technical-seo.html" class="btn-arrow" style="font-size:var(--text-xs)">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div class="service-item__name">Local SEO</div>
+            <div class="service-item__desc">Dominate local search results, Google Business optimization, and geo-targeted content strategies.</div>
+            <a href="seo.html" class="btn-arrow" style="font-size:var(--text-xs)">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+              </svg>
+            </div>
+            <div class="service-item__name">Website Design</div>
+            <div class="service-item__desc">Award-worthy UI/UX design with Scandinavian aesthetics, tailored to your brand and conversion goals.</div>
+            <a href="website-design.html" class="btn-arrow" style="font-size:var(--text-xs)">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+              </svg>
+            </div>
+            <div class="service-item__name">Website Development</div>
+            <div class="service-item__desc">Clean, performant, accessible code built for speed, scalability, and search engine excellence.</div>
+            <a href="website-development.html" class="btn-arrow" style="font-size:var(--text-xs)">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+            </div>
+            <div class="service-item__name">Shopify Development</div>
+            <div class="service-item__desc">Custom Shopify themes, apps, and stores optimised for conversion, speed, and organic search.</div>
+            <a href="website-development.html" class="btn-arrow" style="font-size:var(--text-xs)">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+            </div>
+            <div class="service-item__name">WordPress Development</div>
+            <div class="service-item__desc">Bespoke WordPress solutions — headless, block-based, and custom themes built for performance.</div>
+            <a href="website-development.html" class="btn-arrow" style="font-size:var(--text-xs)">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+              </svg>
+            </div>
+            <div class="service-item__name">Website Maintenance</div>
+            <div class="service-item__desc">Proactive monitoring, updates, security, and ongoing optimisation to keep your site at peak performance.</div>
+            <a href="services.html" class="btn-arrow" style="font-size:var(--text-xs)">
+              Learn more
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="split split--40-60">
+          <div class="about-visual reveal-left">
+            <img src="assets/images/about.jpg" alt="True Click SEO Stockholm office" class="about-visual__image" loading="lazy" />
+            <div class="about-visual__badge">
+              <div class="about-visual__badge-num">7+</div>
+              <div class="about-visual__badge-label">Years of excellence</div>
+            </div>
+          </div>
+
+          <div class="reveal-right">
+            <div class="section-header__label">
+              <span class="label label--accent">About Us</span>
+            </div>
+            <h2 class="section-header__title" id="about-heading" style="margin-bottom:var(--space-6)">
+              Two offices.<br>One mission.
+            </h2>
+            <p class="body-lg text-muted" style="margin-bottom:var(--space-6)">
+              True Click SEO was founded on a simple belief: that great digital results come from the intersection of creative excellence and analytical precision.
+            </p>
+            <p class="body-md text-muted" style="margin-bottom:var(--space-8)">
+              Our Stockholm headquarters leads strategy, design, and client relationships with Scandinavian clarity. Our Pakistan development office delivers world-class engineering around the clock — giving our clients a true global competitive advantage.
+            </p>
+
+            <div class="about-offices">
+              <div class="office-chip">
+                <span class="office-chip__flag">🇸🇪</span>
+                Headquarters — Stockholm, Sweden
+              </div>
+              <div class="office-chip">
+                <span class="office-chip__flag">🇵🇰</span>
+                Development — Pakistan
+              </div>
+            </div>
+
+            <div style="margin-top:var(--space-8)">
+              <a href="about.html" class="btn btn--outline" id="about-cta">Meet the Team</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROCESS
+    ═══════════════════════════════════════════ -->
+    <section class="section process-section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <div class="section-header__label">
+            <span class="label" style="color:rgba(247,247,245,0.4)">How We Work</span>
+          </div>
+          <h2 class="section-header__title" id="process-heading">
+            Our process, refined<br>over 120+ projects
+          </h2>
+          <p class="section-header__desc">
+            A systematic approach that removes guesswork and delivers predictable, measurable results.
+          </p>
+        </div>
+
+        <div class="process-grid stagger">
+          <div class="process-step">
+            <div class="process-step__dot">01</div>
+            <div class="process-step__num">Discover</div>
+            <div class="process-step__title">Research</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step__dot">02</div>
+            <div class="process-step__num">Strategy</div>
+            <div class="process-step__title">Plan</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step__dot">03</div>
+            <div class="process-step__num">Design</div>
+            <div class="process-step__title">Create</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step__dot">04</div>
+            <div class="process-step__num">Develop</div>
+            <div class="process-step__title">Build</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step__dot">05</div>
+            <div class="process-step__num">SEO</div>
+            <div class="process-step__title">Optimise</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step__dot">06</div>
+            <div class="process-step__num">Launch</div>
+            <div class="process-step__title">Deploy</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step__dot">07</div>
+            <div class="process-step__num">Growth</div>
+            <div class="process-step__title">Scale</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CASE STUDIES
+    ═══════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="case-studies-heading">
+      <div class="container">
+        <div class="section-header flex-between reveal">
+          <div>
+            <div class="section-header__label">
+              <span class="label label--accent">Results That Matter</span>
+            </div>
+            <h2 class="section-header__title" id="case-studies-heading">
+              Proof is in the<br>performance
+            </h2>
+          </div>
+          <a href="case-studies.html" class="btn-arrow" id="cs-view-all">
+            All case studies
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="case-studies-grid stagger">
+          <article class="case-card">
+            <img src="assets/images/project-1.jpg" alt="NordCommerce SEO case study" class="case-card__image" loading="lazy" />
+            <div class="case-card__body">
+              <div class="case-card__tag">E-Commerce · SEO</div>
+              <h3 class="case-card__title">NordCommerce — Organic Growth Overhaul</h3>
+              <p class="case-card__desc">Full technical SEO rebuild and content strategy that transformed a stagnant e-commerce site into a traffic powerhouse.</p>
+              <div class="case-card__metrics">
+                <div>
+                  <div class="case-card__metric-value">+320%</div>
+                  <div class="case-card__metric-label">Organic traffic</div>
+                </div>
+                <div>
+                  <div class="case-card__metric-value">+180%</div>
+                  <div class="case-card__metric-label">Qualified leads</div>
+                </div>
+                <div>
+                  <div class="case-card__metric-value">+250%</div>
+                  <div class="case-card__metric-label">Keyword rankings</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <img src="assets/images/project-4.jpg" alt="Aura Fashion Shopify case study" class="case-card__image" loading="lazy" />
+            <div class="case-card__body">
+              <div class="case-card__tag">Fashion · Shopify · Design</div>
+              <h3 class="case-card__title">Aura Fashion — Shopify Relaunch</h3>
+              <p class="case-card__desc">Custom Shopify storefront with editorial UX design drove a dramatic lift in conversion rate and average order value.</p>
+              <div class="case-card__metrics">
+                <div>
+                  <div class="case-card__metric-value">+215%</div>
+                  <div class="case-card__metric-label">Conversion rate</div>
+                </div>
+                <div>
+                  <div class="case-card__metric-value">+140%</div>
+                  <div class="case-card__metric-label">Avg. order value</div>
+                </div>
+                <div>
+                  <div class="case-card__metric-value">0.8s</div>
+                  <div class="case-card__metric-label">Page load time</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         STATISTICS
+    ═══════════════════════════════════════════ -->
+    <section class="section section--sm stats-section" aria-labelledby="stats-heading">
+      <div class="container container--2xl">
+        <h2 class="sr-only" id="stats-heading">Our numbers</h2>
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <span class="stat-number" data-count="120" data-suffix="+" aria-label="120+ projects completed">0+</span>
+            <p class="stat-label">Projects completed</p>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number" data-count="98" data-suffix="%" aria-label="98% client retention rate">0%</span>
+            <p class="stat-label">Client retention rate</p>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number" data-count="15" data-suffix="+" aria-label="15 countries served">0+</span>
+            <p class="stat-label">Countries served</p>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-number stat-number--accent" data-count="2" aria-label="2 global offices">0</span>
+            <p class="stat-label">Global offices</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         TESTIMONIALS
+    ═══════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <div class="section-header__label">
+            <span class="label label--accent">Testimonials</span>
+          </div>
+          <h2 class="section-header__title" id="testimonials-heading">
+            Trusted by ambitious<br>brands worldwide
+          </h2>
+        </div>
+
+        <div class="testimonials-slider stagger">
+          <div class="testimonial-card">
+            <p class="testimonial-card__quote">True Click transformed our digital presence completely. Our organic traffic tripled in eight months and we're now ranking #1 for our most competitive keywords.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">EL</div>
+              <div>
+                <div class="testimonial-card__name">Erik Lindström</div>
+                <div class="testimonial-card__role">CEO, NordCommerce AB</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-card__quote">The website they designed for us is genuinely the most beautiful thing our company has ever produced. Sales went up 40% in the first quarter after launch.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">SH</div>
+              <div>
+                <div class="testimonial-card__name">Sara Hassan</div>
+                <div class="testimonial-card__role">Founder, Aura Fashion</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-card__quote">What sets True Click apart is their attention to detail and genuine care for results. They don't just deliver a website — they deliver a growth engine.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">MK</div>
+              <div>
+                <div class="testimonial-card__name">Magnus Karlsson</div>
+                <div class="testimonial-card__role">CTO, Pulsar Analytics</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         INSIGHTS PREVIEW
+    ═══════════════════════════════════════════ -->
+    <section class="section" style="background:var(--color-surface)" aria-labelledby="insights-heading">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <div class="section-header__label">
+            <span class="label label--accent">Insights</span>
+          </div>
+          <h2 class="section-header__title" id="insights-heading">
+            Knowledge worth sharing
+          </h2>
+        </div>
+
+        <div class="grid grid-3 stagger">
+          <article class="post-card">
+            <div class="post-card__image" style="aspect-ratio:3/2;background:linear-gradient(135deg,#0055FF15,#0055FF05);border-radius:var(--radius-xl);overflow:hidden">
+              <img src="assets/images/project-3.jpg" alt="Core Web Vitals 2025 guide" style="width:100%;height:100%;object-fit:cover" loading="lazy" />
+            </div>
+            <div class="post-card__cat">Technical SEO</div>
+            <h3 class="post-card__title">Core Web Vitals in 2025: The Complete Guide</h3>
+            <div class="post-card__meta">12 min read · July 2025</div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-card__image" style="aspect-ratio:3/2;background:var(--color-surface-2);border-radius:var(--radius-xl);overflow:hidden">
+              <img src="assets/images/project-2.jpg" alt="Shopify SEO strategies" style="width:100%;height:100%;object-fit:cover" loading="lazy" />
+            </div>
+            <div class="post-card__cat">SEO</div>
+            <h3 class="post-card__title">Why Your Shopify Store Isn't Ranking (And How to Fix It)</h3>
+            <div class="post-card__meta">8 min read · June 2025</div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-card__image" style="aspect-ratio:3/2;background:var(--color-surface-2);border-radius:var(--radius-xl);overflow:hidden">
+              <img src="assets/images/about.jpg" alt="Scandinavian web design principles" style="width:100%;height:100%;object-fit:cover" loading="lazy" />
+            </div>
+            <div class="post-card__cat">Design</div>
+            <h3 class="post-card__title">Scandinavian Web Design: Why Simplicity Converts</h3>
+            <div class="post-card__meta">6 min read · May 2025</div>
+          </article>
+        </div>
+
+        <div style="text-align:center;margin-top:var(--space-12)">
+          <a href="insights.html" class="btn btn--outline" id="insights-view-all">View all articles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CTA
+    ═══════════════════════════════════════════ -->
+    <section class="section cta-section" aria-labelledby="cta-heading">
+      <div class="cta-section__bg" aria-hidden="true"></div>
+      <div class="container" style="position:relative;z-index:1">
+        <div class="reveal">
+          <h2 class="cta-section__headline" id="cta-heading">
+            Ready to grow<br>your digital presence?
+          </h2>
+          <p class="cta-section__sub">
+            Let's build something that performs. Schedule a free consultation with our team.
+          </p>
+          <span class="magnetic">
+            <a href="contact.html" class="btn btn--accent btn--xl" id="cta-main-btn">
+              Schedule a Consultation
+              <svg width="20" height="20" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </span>
+          <p style="margin-top:var(--space-6);font-size:var(--text-xs);color:rgba(247,247,245,0.3)">
+            Free consultation · No commitment · Response within 24 hours
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand-name">
+            True Click<span class="nav__logo-dot" style="background:var(--color-accent)"></span>
+          </div>
+          <p class="footer__tagline">
+            Premium SEO, web design, and development agency. Built in Stockholm. Delivered globally.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter / X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Services</div>
+          <ul class="footer__links">
+            <li><a href="seo.html" class="footer__link">SEO</a></li>
+            <li><a href="technical-seo.html" class="footer__link">Technical SEO</a></li>
+            <li><a href="seo.html" class="footer__link">Local SEO</a></li>
+            <li><a href="website-design.html" class="footer__link">Website Design</a></li>
+            <li><a href="website-development.html" class="footer__link">Website Development</a></li>
+            <li><a href="website-development.html" class="footer__link">Shopify Development</a></li>
+            <li><a href="website-development.html" class="footer__link">WordPress Development</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Company</div>
+          <ul class="footer__links">
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+            <li><a href="case-studies.html" class="footer__link">Case Studies</a></li>
+            <li><a href="insights.html" class="footer__link">Insights</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__col-title">Offices</div>
+          <div style="margin-bottom:var(--space-5)">
+            <div class="footer__office-name">🇸🇪 Stockholm, Sweden</div>
+            <div class="footer__office-addr">
+              Headquarters &amp; Strategy<br>
+              <a href="mailto:trueclickseo@gmail.com">trueclickseo@gmail.com</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer__office-name">🇵🇰 Pakistan</div>
+            <div class="footer__office-addr">
+              Development Office<br>
+              <a href="mailto:trueclickseo@gmail.com">trueclickseo@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 True Click SEO. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Terms of Service</a>
+          <a href="#" class="footer__bottom-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"         defer></script>
+  <script src="js/animations.js"   defer></script>
+  <script src="js/cursor.js"       defer></script>
+  <script src="js/counter.js"      defer></script>
+  <script src="js/testimonials.js" defer></script>
+
+</body>
+</html>

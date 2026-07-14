@@ -1,0 +1,124 @@
+/* ============================================
+   LAYOUT.CSS — True Click SEO
+   Container, grid, and layout utilities
+   ============================================ */
+
+/* ── Container ───────────────────────────────── */
+
+.container {
+  width: 100%;
+  max-width: var(--container-xl);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+}
+
+.container--sm  { max-width: var(--container-sm); }
+.container--md  { max-width: var(--container-md); }
+.container--lg  { max-width: var(--container-lg); }
+.container--2xl { max-width: var(--container-2xl); }
+.container--full { max-width: 100%; }
+
+/* ── Section ──────────────────────────────────── */
+
+.section {
+  padding-block: var(--section-py);
+}
+
+.section--sm {
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+
+.section--lg {
+  padding-block: clamp(7rem, 14vw, 12rem);
+}
+
+/* ── Grid Utilities ───────────────────────────── */
+
+.grid {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+.grid-auto-sm {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.grid-auto-md {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* ── Flex Utilities ───────────────────────────── */
+
+.flex          { display: flex; }
+.flex-col      { display: flex; flex-direction: column; }
+.flex-center   { display: flex; align-items: center; justify-content: center; }
+.flex-between  { display: flex; align-items: center; justify-content: space-between; }
+.flex-start    { display: flex; align-items: flex-start; }
+.items-center  { align-items: center; }
+.gap-2  { gap: var(--space-2); }
+.gap-4  { gap: var(--space-4); }
+.gap-6  { gap: var(--space-6); }
+.gap-8  { gap: var(--space-8); }
+.gap-12 { gap: var(--space-12); }
+
+/* ── Split Layout ──────────────────────────────── */
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+.split--60-40 {
+  grid-template-columns: 60fr 40fr;
+}
+
+.split--40-60 {
+  grid-template-columns: 40fr 60fr;
+}
+
+/* ── Spacing Utilities ───────────────────────── */
+
+.mt-4  { margin-top: var(--space-4); }
+.mt-6  { margin-top: var(--space-6); }
+.mt-8  { margin-top: var(--space-8); }
+.mt-12 { margin-top: var(--space-12); }
+.mt-16 { margin-top: var(--space-16); }
+.mb-4  { margin-bottom: var(--space-4); }
+.mb-6  { margin-bottom: var(--space-6); }
+.mb-8  { margin-bottom: var(--space-8); }
+
+/* ── Visibility ───────────────────────────────── */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ── Responsive Breakpoints ───────────────────── */
+
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .split  { gap: var(--space-10); }
+}
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .split, .split--60-40, .split--40-60 {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of True Click SEO — browse our web design, development, and SEO projects across e-commerce, SaaS, real estate, and more." />
+  <title>Portfolio — True Click SEO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" /><link rel="stylesheet" href="css/tokens.css" /><link rel="stylesheet" href="css/animations.css" /><link rel="stylesheet" href="css/layout.css" /><link rel="stylesheet" href="css/components.css" /><link rel="stylesheet" href="css/pages/inner.css" />
+</head>
+<body>
+  <div id="scroll-progress" aria-hidden="true"></div>
+  <div id="cursor-dot" aria-hidden="true"></div><div id="cursor-ring" aria-hidden="true"></div>
+  <div id="page-transition" aria-hidden="true"></div>
+  <nav class="nav"><div class="container"><div class="nav__inner">
+    <a href="index.html" class="nav__logo">True Click<span class="nav__logo-dot"></span></a>
+    <ul class="nav__links"><li><a href="about.html" class="nav__link">About</a></li><li><a href="services.html" class="nav__link">Services</a></li><li><a href="portfolio.html" class="nav__link active">Portfolio</a></li><li><a href="case-studies.html" class="nav__link">Case Studies</a></li><li><a href="insights.html" class="nav__link">Insights</a></li></ul>
+    <a href="contact.html" class="nav__cta magnetic">Let's Talk</a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div></div></nav>
+  <div class="nav__mobile" id="mobile-menu"><a href="index.html" class="nav__mobile-link">Home</a><a href="about.html" class="nav__mobile-link">About</a><a href="services.html" class="nav__mobile-link">Services</a><a href="portfolio.html" class="nav__mobile-link">Portfolio</a><a href="contact.html" class="nav__mobile-link">Contact</a></div>
+
+  <main id="main">
+    <section class="page-hero section">
+      <div class="container" style="position:relative;z-index:1">
+        <div class="reveal"><span class="label label--accent" style="display:block;margin-bottom:var(--space-5)">Our Work</span>
+          <h1 class="page-hero__title">Projects that prove what's possible.</h1>
+          <p class="page-hero__desc">120+ projects delivered across 15+ countries. Browse our work by service or industry.</p>
+        </div>
+      </div>
+      <div class="page-hero__bg-text" aria-hidden="true">Work</div>
+    </section>
+
+    <section class="section section--sm">
+      <div class="container">
+        <!-- Filter -->
+        <div class="portfolio-filter reveal">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All Work</button>
+          <button class="filter-btn" data-filter="seo" id="filter-seo">SEO</button>
+          <button class="filter-btn" data-filter="design" id="filter-design">Web Design</button>
+          <button class="filter-btn" data-filter="development" id="filter-dev">Development</button>
+          <button class="filter-btn" data-filter="shopify" id="filter-shopify">Shopify</button>
+          <button class="filter-btn" data-filter="wordpress" id="filter-wp">WordPress</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="portfolio-grid">
+          <div class="portfolio-item portfolio-item--tall" data-category="seo">
+            <img src="assets/images/project-1.jpg" alt="NordCommerce SEO project" class="portfolio-item__image" loading="lazy" />
+            <div class="portfolio-item__overlay"></div>
+            <div class="portfolio-item__info"><div class="portfolio-item__name">NordCommerce</div><div class="portfolio-item__cat">E-Commerce · SEO</div></div>
+          </div>
+          <div class="portfolio-item" data-category="design">
+            <img src="assets/images/project-2.jpg" alt="Solhem web design" class="portfolio-item__image" loading="lazy" />
+            <div class="portfolio-item__overlay"></div>
+            <div class="portfolio-item__info"><div class="portfolio-item__name">Solhem</div><div class="portfolio-item__cat">Real Estate · Design</div></div>
+          </div>
+          <div class="portfolio-item" data-category="development">
+            <img src="assets/images/project-3.jpg" alt="Pulsar development" class="portfolio-item__image" loading="lazy" />
+            <div class="portfolio-item__overlay"></div>
+            <div class="portfolio-item__info"><div class="portfolio-item__name">Pulsar Analytics</div><div class="portfolio-item__cat">SaaS · Development</div></div>
+          </div>
+          <div class="portfolio-item portfolio-item--wide" data-category="shopify">
+            <img src="assets/images/project-4.jpg" alt="Aura Fashion Shopify store" class="portfolio-item__image" loading="lazy" style="min-height:280px" />
+            <div class="portfolio-item__overlay"></div>
+            <div class="portfolio-item__info"><div class="portfolio-item__name">Aura Fashion</div><div class="portfolio-item__cat">Fashion · Shopify</div></div>
+          </div>
+          <div class="portfolio-item" data-category="wordpress">
+            <img src="assets/images/about.jpg" alt="Bergmann Consulting WordPress site" class="portfolio-item__image" loading="lazy" />
+            <div class="portfolio-item__overlay"></div>
+            <div class="portfolio-item__info"><div class="portfolio-item__name">Bergmann Consulting</div><div class="portfolio-item__cat">B2B · WordPress</div></div>
+          </div>
+          <div class="portfolio-item" data-category="seo">
+            <img src="assets/images/project-1.jpg" alt="Halsa Health SEO campaign" class="portfolio-item__image" loading="lazy" />
+            <div class="portfolio-item__overlay"></div>
+            <div class="portfolio-item__info"><div class="portfolio-item__name">Hälsa Health</div><div class="portfolio-item__cat">Healthcare · SEO</div></div>
+          </div>
+          <div class="portfolio-item" data-category="design">
+            <img src="assets/images/project-2.jpg" alt="Lumini interior design website" class="portfolio-item__image" loading="lazy" />
+            <div class="portfolio-item__overlay"></div>
+            <div class="portfolio-item__info"><div class="portfolio-item__name">Lumini Interiors</div><div class="portfolio-item__cat">Interior · Design</div></div>
+          </div>
+          <div class="portfolio-item" data-category="development">
+            <img src="assets/images/project-3.jpg" alt="Volta Tech development" class="portfolio-item__image" loading="lazy" />
+            <div class="portfolio-item__overlay"></div>
+            <div class="portfolio-item__info"><div class="portfolio-item__name">Volta Tech</div><div class="portfolio-item__cat">Fintech · Development</div></div>
+          </div>
+          <div class="portfolio-item" data-category="shopify">
+            <img src="assets/images/project-4.jpg" alt="Frihav Shopify store" class="portfolio-item__image" loading="lazy" />
+            <div class="portfolio-item__overlay"></div>
+            <div class="portfolio-item__info"><div class="portfolio-item__name">Frihav</div><div class="portfolio-item__cat">Lifestyle · Shopify</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section"><div class="cta-section__bg"></div>
+      <div class="container" style="position:relative;z-index:1;text-align:center"><div class="reveal">
+        <h2 class="cta-section__headline">Have a project in mind?</h2>
+        <p class="cta-section__sub">Let's discuss how we can create something you're proud to show the world.</p>
+        <span class="magnetic"><a href="contact.html" class="btn btn--accent btn--xl" id="portfolio-cta-btn">Start a Project <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></span>
+      </div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">
+    <div class="footer__top">
+      <div><div class="footer__brand-name">True Click<span class="nav__logo-dot" style="background:var(--color-accent)"></span></div><p class="footer__tagline">Premium digital agency. Stockholm · Global.</p></div>
+      <div><div class="footer__col-title">Services</div><ul class="footer__links"><li><a href="seo.html" class="footer__link">SEO</a></li><li><a href="website-design.html" class="footer__link">Website Design</a></li><li><a href="website-development.html" class="footer__link">Development</a></li></ul></div>
+      <div><div class="footer__col-title">Company</div><ul class="footer__links"><li><a href="about.html" class="footer__link">About</a></li><li><a href="portfolio.html" class="footer__link">Portfolio</a></li><li><a href="contact.html" class="footer__link">Contact</a></li></ul></div>
+      <div><div class="footer__col-title">Offices</div><div class="footer__office-name">🇸🇪 Stockholm · 🇵🇰 Pakistan</div><div class="footer__office-addr"><a href="mailto:trueclickseo@gmail.com">trueclickseo@gmail.com</a></div></div>
+    </div>
+    <div class="footer__bottom"><p class="footer__copy">© 2025 True Click SEO.</p></div>
+  </div></footer>
+  <script src="js/main.js" defer></script><script src="js/animations.js" defer></script><script src="js/cursor.js" defer></script><script src="js/portfolio.js" defer></script>
+</body>
+</html>

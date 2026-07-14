@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact True Click SEO — schedule a free consultation with our Stockholm-based digital agency team. We respond within 24 hours." />
+  <title>Contact — True Click SEO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" /><link rel="stylesheet" href="css/tokens.css" /><link rel="stylesheet" href="css/animations.css" /><link rel="stylesheet" href="css/layout.css" /><link rel="stylesheet" href="css/components.css" /><link rel="stylesheet" href="css/pages/inner.css" />
+</head>
+<body>
+  <div id="scroll-progress" aria-hidden="true"></div>
+  <div id="cursor-dot" aria-hidden="true"></div><div id="cursor-ring" aria-hidden="true"></div>
+  <div id="page-transition" aria-hidden="true"></div>
+  <nav class="nav"><div class="container"><div class="nav__inner">
+    <a href="index.html" class="nav__logo">True Click<span class="nav__logo-dot"></span></a>
+    <ul class="nav__links"><li><a href="about.html" class="nav__link">About</a></li><li><a href="services.html" class="nav__link">Services</a></li><li><a href="portfolio.html" class="nav__link">Portfolio</a></li><li><a href="case-studies.html" class="nav__link">Case Studies</a></li><li><a href="insights.html" class="nav__link">Insights</a></li></ul>
+    <a href="contact.html" class="nav__cta active magnetic">Let's Talk</a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div></div></nav>
+  <div class="nav__mobile" id="mobile-menu"><a href="index.html" class="nav__mobile-link">Home</a><a href="about.html" class="nav__mobile-link">About</a><a href="services.html" class="nav__mobile-link">Services</a><a href="portfolio.html" class="nav__mobile-link">Portfolio</a><a href="contact.html" class="nav__mobile-link">Contact</a></div>
+
+  <main id="main">
+    <section class="page-hero section">
+      <div class="container" style="position:relative;z-index:1">
+        <div class="reveal"><span class="label label--accent" style="display:block;margin-bottom:var(--space-5)">Get In Touch</span>
+          <h1 class="page-hero__title">Let's start a conversation about your growth.</h1>
+          <p class="page-hero__desc">Tell us about your project. We'll respond within 24 hours and schedule a free strategy consultation.</p>
+        </div>
+      </div>
+      <div class="page-hero__bg-text" aria-hidden="true">Talk</div>
+    </section>
+
+    <section class="section section--sm" aria-labelledby="contact-form-heading">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Info -->
+          <div class="contact-info reveal-left">
+            <h2 id="contact-form-heading" style="font-size:var(--text-2xl);font-weight:800;margin-bottom:var(--space-8);letter-spacing:-0.02em">Our offices</h2>
+            <div class="contact-detail"><div class="contact-detail__label">Headquarters</div><div class="contact-detail__val">Stockholm, Sweden 🇸🇪<br><a href="mailto:trueclickseo@gmail.com">trueclickseo@gmail.com</a></div></div>
+            <div class="contact-detail"><div class="contact-detail__label">Development Office</div><div class="contact-detail__val">Pakistan 🇵🇰<br><a href="mailto:trueclickseo@gmail.com">trueclickseo@gmail.com</a></div></div>
+            <div class="contact-detail"><div class="contact-detail__label">Response Time</div><div class="contact-detail__val">Within 24 hours</div></div>
+            <div class="contact-detail"><div class="contact-detail__label">Consultation</div><div class="contact-detail__val">Free · No commitment</div></div>
+
+            <div style="margin-top:var(--space-10)">
+              <div style="font-size:var(--text-xs);font-weight:600;letter-spacing:var(--tracking-widest);text-transform:uppercase;color:var(--color-muted);margin-bottom:var(--space-5)">Follow us</div>
+              <div style="display:flex;gap:var(--space-4)">
+                <a href="#" style="font-size:var(--text-sm);color:var(--color-text);text-decoration:none;font-weight:500;transition:color 0.2s" onmouseenter="this.style.color='var(--color-accent)'" onmouseleave="this.style.color='var(--color-text)'">LinkedIn</a>
+                <a href="#" style="font-size:var(--text-sm);color:var(--color-text);text-decoration:none;font-weight:500;transition:color 0.2s" onmouseenter="this.style.color='var(--color-accent)'" onmouseleave="this.style.color='var(--color-text)'">Twitter / X</a>
+                <a href="#" style="font-size:var(--text-sm);color:var(--color-text);text-decoration:none;font-weight:500;transition:color 0.2s" onmouseenter="this.style.color='var(--color-accent)'" onmouseleave="this.style.color='var(--color-text)'">Instagram</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="reveal-right">
+            <form class="contact-form" id="contact-form" novalidate>
+              <!-- Honeypot — hidden from humans, catches bots -->
+              <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off" />
+
+              <!-- Success / Error banner (hidden until form submits) -->
+              <div id="form-banner" style="display:none;padding:var(--space-5) var(--space-6);border-radius:var(--radius-lg);font-size:var(--text-sm);font-weight:500;margin-bottom:var(--space-6)"></div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contact-name">Full Name *</label>
+                  <input class="form-input" type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-email">Email Address *</label>
+                  <input class="form-input" type="email" id="contact-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contact-company">Company</label>
+                  <input class="form-input" type="text" id="contact-company" name="company" placeholder="Company name" autocomplete="organization" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-budget">Budget Range</label>
+                  <select class="form-select" id="contact-budget" name="budget">
+                    <option value="">Select range</option>
+                    <option>Under €5,000</option>
+                    <option>€5,000 – €15,000</option>
+                    <option>€15,000 – €50,000</option>
+                    <option>€50,000+</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-service">Service Interested In</label>
+                <select class="form-select" id="contact-service" name="service">
+                  <option value="">Select a service</option>
+                  <option>SEO</option>
+                  <option>Technical SEO</option>
+                  <option>Local SEO</option>
+                  <option>Website Design</option>
+                  <option>Website Development</option>
+                  <option>WordPress Development</option>
+                  <option>Shopify Development</option>
+                  <option>Website Maintenance</option>
+                  <option>Full-Service (Multiple)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Tell us about your project *</label>
+                <textarea class="form-textarea" id="contact-message" name="message" placeholder="Describe your goals, current challenges, and what success looks like for you..." required></textarea>
+              </div>
+              <div>
+                <span class="magnetic" style="display:inline-block">
+                  <button type="submit" class="btn btn--primary btn--lg" id="contact-submit-btn">
+                    <span id="btn-text">Send Message</span>
+                    <span id="btn-spinner" style="display:none">Sending…</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </span>
+                <p style="font-size:var(--text-xs);color:var(--color-subtle);margin-top:var(--space-4)">By submitting this form, you agree to our Privacy Policy. We'll never share your data.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">
+    <div class="footer__top">
+      <div><div class="footer__brand-name">True Click<span class="nav__logo-dot" style="background:var(--color-accent)"></span></div><p class="footer__tagline">Premium SEO, web design, and development. Stockholm · Global.</p></div>
+      <div><div class="footer__col-title">Services</div><ul class="footer__links"><li><a href="seo.html" class="footer__link">SEO</a></li><li><a href="website-design.html" class="footer__link">Website Design</a></li><li><a href="website-development.html" class="footer__link">Website Development</a></li></ul></div>
+      <div><div class="footer__col-title">Company</div><ul class="footer__links"><li><a href="about.html" class="footer__link">About</a></li><li><a href="portfolio.html" class="footer__link">Portfolio</a></li><li><a href="contact.html" class="footer__link">Contact</a></li></ul></div>
+      <div><div class="footer__col-title">Offices</div><div style="margin-bottom:var(--space-4)"><div class="footer__office-name">🇸🇪 Stockholm</div><div class="footer__office-addr"><a href="mailto:trueclickseo@gmail.com">trueclickseo@gmail.com</a></div></div><div><div class="footer__office-name">🇵🇰 Pakistan</div><div class="footer__office-addr"><a href="mailto:trueclickseo@gmail.com">trueclickseo@gmail.com</a></div></div></div>
+    </div>
+    <div class="footer__bottom"><p class="footer__copy">© 2025 True Click SEO.</p></div>
+  </div></footer>
+  <script src="js/main.js" defer></script><script src="js/animations.js" defer></script><script src="js/cursor.js" defer></script>
+  <script>
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form    = e.target;
+    const btn     = document.getElementById('contact-submit-btn');
+    const btnText = document.getElementById('btn-text');
+    const spinner = document.getElementById('btn-spinner');
+    const banner  = document.getElementById('form-banner');
+
+    // Show loading state
+    btn.disabled = true;
+    btnText.style.display = 'none';
+    spinner.style.display = 'inline';
+    banner.style.display  = 'none';
+
+    try {
+      const data = new FormData(form);
+      const res  = await fetch('contact-handler.php', { method: 'POST', body: data });
+      const json = await res.json();
+
+      banner.style.display     = 'block';
+      banner.style.background  = json.success ? '#e8f5e9' : '#fdecea';
+      banner.style.color       = json.success ? '#2e7d32' : '#c62828';
+      banner.style.border      = json.success ? '1px solid #a5d6a7' : '1px solid #ef9a9a';
+      banner.textContent       = json.message;
+
+      if (json.success) form.reset();
+
+    } catch (err) {
+      banner.style.display    = 'block';
+      banner.style.background = '#fdecea';
+      banner.style.color      = '#c62828';
+      banner.style.border     = '1px solid #ef9a9a';
+      banner.textContent      = 'Something went wrong. Please email us at trueclickseo@gmail.com';
+    }
+
+    btn.disabled = false;
+    btnText.style.display = 'inline';
+    spinner.style.display = 'none';
+  });
+  </script>
+</body>
+</html>
